@@ -1,12 +1,24 @@
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .card-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 1440px;
   height: 100vh;
-
-
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card-container {
     width: 100%;
     margin-top: 3rem;
     align-items: flex-start;
@@ -17,9 +29,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: $card_background;
+  background-color: #1b1938;
   border-radius: 10px;
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card {
     width: 85%;
     height: 72vh;
     flex-direction: column-reverse;
@@ -27,11 +41,12 @@
 }
 
 .card-content {
-
   height: 100%;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card-content {
     flex: 43%;
     width: 100%;
   }
@@ -42,19 +57,19 @@
   margin-left: 5rem;
   margin-top: 3rem;
   margin-right: 9rem;
-
   text-align: left;
-  color: $White;
-  @media screen and (max-width: 375px) {
+  color: white;
+}
+@media screen and (max-width: 375px) {
+  .card-content__header {
     font-size: 0.75rem;
     text-align: center;
     margin-left: 1rem;
     margin-right: 2.3rem;
   }
-
-  & h1 span {
-    color: $accent;
-  }
+}
+.card-content__header h1 span {
+  color: #aa5cdb;
 }
 
 .card-content__text {
@@ -62,9 +77,11 @@
   margin-top: 0.7rem;
   margin-right: 9rem;
   line-height: 1.5rem;
-  color: $main_paragraph;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.9rem;
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card-content__text {
     height: 21%;
     text-align: center;
     margin-left: 0.9rem;
@@ -79,8 +96,9 @@
   margin-bottom: 3rem;
   margin-top: 2rem;
   display: flex;
-
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card-content__footer {
     height: 50%;
     flex-direction: column;
     justify-items: center;
@@ -90,51 +108,54 @@
     margin-bottom: 0;
   }
 }
+
 .card-content__footer__item {
   display: flex;
   flex-direction: column;
   margin: 1rem 4rem 0rem 0;
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card-content__footer__item {
     align-items: center;
   }
-  & p {
-    color: $White;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem;
-  }
-  & span {
-    color: $stat_headings;
-    font-size: 0.7rem;
-    font-family: "Inter", sans-serif;
-  }
 }
+.card-content__footer__item p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.card-content__footer__item span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7rem;
+  font-family: "Inter", sans-serif;
+}
+
 .card-image {
   flex: 97%;
-
   position: relative;
   background-image: url("images/image-header-desktop.jpg");
   background-repeat: no-repeat;
-
   border-radius: 0px 5px 5px 0px;
-
-  
-  @media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 375px) {
+  .card-image {
     flex: 0%;
-  
     width: 100%;
-
     position: relative;
     background: url("images/image-header-mobile.jpg");
     background-size: cover;
     border-radius: 5px 5px 0px 0px;
   }
 }
+
 .card-image__gradient {
   position: absolute;
   opacity: 0.6;
   width: 100%;
   height: 100%;
-  background-color: $accent;
+  background-color: #aa5cdb;
   border-radius: 0px 5px 5px 0px;
 }
+
+/*# sourceMappingURL=styles.css.map */
