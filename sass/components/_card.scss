@@ -1,36 +1,37 @@
 .card-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 1440px;
+  display: flex;
   height: 100vh;
-
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
 
   @media screen and (max-width: 375px) {
-    width: 100%;
-    margin-top: 3rem;
     align-items: flex-start;
+    margin-top: 3rem;
+    width: 100%;
   }
 }
 
 .card {
+  background-color: $card_background;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: $card_background;
-  border-radius: 10px;
   @media screen and (max-width: 375px) {
-    width: 85%;
-    height: 72vh;
     flex-direction: column-reverse;
+    height: 72vh;
+    width: 85%;
   }
 }
 
 .card-content {
 
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
   @media screen and (max-width: 375px) {
     flex: 43%;
     width: 100%;
@@ -38,18 +39,18 @@
 }
 
 .card-content__header {
+  color: $White;
   height: 21%;
   margin-left: 5rem;
   margin-top: 3rem;
   margin-right: 9rem;
 
   text-align: left;
-  color: $White;
   @media screen and (max-width: 375px) {
     font-size: 0.75rem;
-    text-align: center;
     margin-left: 1rem;
     margin-right: 2.3rem;
+    text-align: center;
   }
 
   & h1 span {
@@ -58,36 +59,32 @@
 }
 
 .card-content__text {
+  color: $main_paragraph;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
   margin-left: 5rem;
   margin-top: 0.7rem;
   margin-right: 9rem;
-  line-height: 1.5rem;
-  color: $main_paragraph;
-  font-size: 0.9rem;
   @media screen and (max-width: 375px) {
+    
     height: 21%;
-    text-align: center;
     margin-left: 0.9rem;
     margin-top: 1.7rem;
     margin-right: 0.9rem;
+    text-align: center;
   }
 }
 
 .card-content__footer {
-  margin-left: 5rem;
-  margin-right: auto;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
   display: flex;
+  margin: 2rem auto 3rem 5rem;
 
   @media screen and (max-width: 375px) {
     height: 50%;
     flex-direction: column;
     justify-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto 0 auto;
+
   }
 }
 .card-content__footer__item {
@@ -111,30 +108,30 @@
 }
 .card-image {
   flex: 97%;
-
-  position: relative;
   background-image: url("images/image-header-desktop.jpg");
   background-repeat: no-repeat;
-
-  border-radius: 0px 5px 5px 0px;
-
+  border-radius: 0px 10px 10px 0px;
+  position: relative;
   
   @media screen and (max-width: 375px) {
     flex: 0%;
-  
-    width: 100%;
-
     position: relative;
     background: url("images/image-header-mobile.jpg");
     background-size: cover;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
   }
 }
+    
+    
 .card-image__gradient {
-  position: absolute;
-  opacity: 0.6;
-  width: 100%;
-  height: 100%;
   background-color: $accent;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  @media screen and (max-width: 375px) {
+    border-radius: 10px 10px 0px 0px;
+  }
 }
