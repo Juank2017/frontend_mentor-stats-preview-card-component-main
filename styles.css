@@ -131,18 +131,23 @@ body {
 }
 
 .card-image {
-  flex: 18%;
+  flex: 96%;
   background-image: url("images/image-header-desktop.jpg");
   background-repeat: no-repeat;
   border-radius: 0px 10px 10px 0px;
   position: relative;
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
 }
 @media screen and (max-width: 375px) {
   .card-image {
+    flex: 18%;
     position: relative;
     background-image: url("images/image-header-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #aa5cdb;
+    background-blend-mode: multiply;
     border-radius: 10px 10px 0px 0px;
     width: 100%;
   }
