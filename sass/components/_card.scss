@@ -9,8 +9,9 @@
 
   @media screen and (max-width: 375px) {
     align-items: flex-start;
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
+    height: 83vh;
   }
 }
 
@@ -22,8 +23,8 @@
   justify-content: center;
   @media screen and (max-width: 375px) {
     flex-direction: column-reverse;
-    height: 72vh;
-    width: 85%;
+    height: 93vh;
+    width: 75%;
   }
 }
 
@@ -33,7 +34,7 @@
   flex-direction: column;
   height: 100%;
   @media screen and (max-width: 375px) {
-    flex: 43%;
+    flex: 55%;
     width: 100%;
   }
 }
@@ -49,7 +50,8 @@
   @media screen and (max-width: 375px) {
     font-size: 0.75rem;
     margin-left: 1rem;
-    margin-right: 2.3rem;
+    margin-right: 1.3rem;
+    margin-top: 0rem;
     text-align: center;
   }
 
@@ -93,6 +95,7 @@
   margin: 1rem 4rem 0rem 0;
   @media screen and (max-width: 375px) {
     align-items: center;
+    margin: 1rem 0rem 0rem 0;
   }
   & p {
     color: $White;
@@ -107,16 +110,17 @@
   }
 }
 .card-image {
-  flex: 97%;
+  flex: 18%;
   background-image: url("images/image-header-desktop.jpg");
   background-repeat: no-repeat;
   border-radius: 0px 10px 10px 0px;
   position: relative;
   
   @media screen and (max-width: 375px) {
-    flex: 0%;
+    // flex: 0%;
     position: relative;
-    background: url("images/image-header-mobile.jpg");
+    background-image: url("images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
     width: 100%;
