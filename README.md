@@ -24,15 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot_desktop.png)
-![](./screenshot_mobile.png)
+![Desktop ScreeShot](./screenshot_desktop.png)
+![Mobile ScreenShot](./screenshot_mobile.png)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Juank2017/frontend_mentor-stats-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://juank2017.github.io/frontend_mentor-stats-preview-card-component-main/)
+- Solution URL: [https://github.com/Juank2017/frontend_mentor-stats-preview-card-component-main](https://github.com/Juank2017/frontend_mentor-stats-preview-card-component-main)
+- Live Site URL: [https://juank2017.github.io/frontend_mentor-stats-preview-card-component-main/](https://juank2017.github.io/frontend_mentor-stats-preview-card-component-main/)
 
 ## My process
 
